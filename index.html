@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <title>Demo vtour</title>
+   <!-- Import the webpage's stylesheet -->
+   <link rel="stylesheet" href="/style.css" />
+
+    <!-- Import the webpage's javascript file -->
+    <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@c27d4a2156bde2ec249600fca4967ba49fecfdc3/dist/aframe-master.min.js"></script>
+    <script src="krpano.js"></script>
+    <script src="/script.js" defer></script>
+    
+  </head>
+  <body>
+    <!--<div id="pano" style="width:1200px; height:600px;"></div>-->
+    <div id="pano" style="width:100%; height:100%;"></div>
+    
+    
+<script>
+  embedpano({target:"pano", bgcolor:"#005590", xml:"tour.xml",});
+</script>
+  </body>
+</html>
